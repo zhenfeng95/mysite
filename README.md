@@ -1,9 +1,5 @@
 # my-site
 
-```
-自动拉取代吗
-```
-
 ## Project setup
 
 ```
