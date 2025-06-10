@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title></title>
+    </head>
+    <body>
+        <noscript>
+            <strong>
+                We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to
+                continue.
+            </strong>
+        </noscript>
+        <div id="app">
+            <style>
+                .loading-img {
+                    position: fixed;
+                    width: 200px;
+                    height: 200px;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -100px;
+                    margin-top: -100px;
+                }
+            </style>
+            <img class="loading-img" src="./img/loading.gif" alt="" />
+        </div>
+        <!-- ref cdn -->
+        <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+        <script src="//oss.cyzone.cn/files/js/<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+        <% } %>
+        <srript src="http://47.95.36.160/static/marked.min.js"></srript>
+        <!-- built files will be auto injected -->
+    </body>
+</html>
