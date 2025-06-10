@@ -1,9 +1,5 @@
 # my-site
 
-```
-测试推送
-```
-
 ## Project setup
 
 ```

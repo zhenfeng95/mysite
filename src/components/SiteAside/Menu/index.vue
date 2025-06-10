@@ -43,12 +43,12 @@ export default {
                 //   icon: "about",
                 //   exact: true,
                 // },
-                // {
-                //     name: "Project",
-                //     title: "项目&效果",
-                //     icon: "code",
-                //     exact: true,
-                // },
+                {
+                    name: "Project",
+                    title: "项目&效果",
+                    icon: "code",
+                    exact: true,
+                },
                 {
                     name: "Message",
                     title: "留言板",
